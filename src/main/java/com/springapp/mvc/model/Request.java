@@ -6,7 +6,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 @Entity
-@Table(name="request", schema = "", catalog = "clientReq")
+@Table(name="request", schema = "", catalog = "req_db")
 public class Request extends AuditModel implements Serializable {
 
     @Id

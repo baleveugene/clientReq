@@ -8,7 +8,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 @Entity
-@Table(name="req_status", schema = "", catalog = "clientReq")
+@Table(name="req_status", schema = "", catalog = "req_db")
 public class ReqStatus implements Serializable {
  
     @Id
@@ -21,9 +21,7 @@ public class ReqStatus implements Serializable {
     @Column(name = "status_name")
     private String name;
     
-    @OneToMany(cascade = CascadeType.ALL,
-            fetch = FetchType.EAGER,
-            mappedBy = "status")
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "status")
     private Set<Request> requests = new HashSet<>();
     
     public ReqStatus() {       

@@ -29,7 +29,7 @@
     <body>   
         <div class="wrapper">
 <!-- ============================================================= HEADER ============================================================= -->
-        <%@include file="/WEB-INF/pages/header.jsp" %>
+        <%@include file="header.jsp" %>
 <!-- ============================================================= HEADER : END ============================================================= -->           
                 <section id="category-grid">
                     <div class="container">       
@@ -113,7 +113,7 @@
                     </div><!-- /.container -->
                 </section><!-- /#category-grid -->    
 <!-- ============================================================= FOOTER ============================================================= -->
-                <%@include file="/WEB-INF/pages/footer.jsp" %>
+                <%@include file="footer.jsp" %>
 <!-- ============================================================= FOOTER : END ============================================================= -->   
         </div><!-- /.wrapper -->
         <!-- JavaScripts placed at the end of the document so the pages load faster -->

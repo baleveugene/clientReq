@@ -6,7 +6,7 @@ import javax.persistence.*;
 import java.util.Set;
 
 @Entity
-@Table(name = "roles")
+@Table(name = "roles", schema = "", catalog = "req_db")
 public class Role implements Serializable {
     private Long id;
     private String name;
